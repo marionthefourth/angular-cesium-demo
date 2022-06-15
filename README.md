@@ -11,7 +11,7 @@
   
     
 ```
-$ git clone https://github.com/articodeltd/angular-cesium-demo.git
+$ git clone https://github.com/marionthefourth/angular-cesium-demo.git
 $ cd angular-cesium-demo
 $ yarn
 $ yarn server
