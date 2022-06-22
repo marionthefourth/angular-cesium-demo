@@ -1,4 +1,4 @@
-# Angular Cesium Demo App
+# Port Life (Angular)
 
 ## Demo
 + You can try and learn about [angular-cesium](http://www.angular-cesium.com) from our [demo](https://angular-cesium.herokuapp.com/).
