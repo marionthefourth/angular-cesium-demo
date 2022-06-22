@@ -1,12 +1,12 @@
 version: "3.7"
 services:
   frontend:
-    image: marionthefourth/angular-cesium-demo
+    image: marionthefourth/port-life-frontend
     ports:
         - "4200:4200"
     depends_on:
       - backend
   backend:
-    image: marionthefourth/angular-cesium-demo-server
+    image: marionthefourth/port-life-backend
     ports:
         - "3000:3000"
