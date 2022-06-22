@@ -7,13 +7,15 @@
   + Multi map sync example
   + Geometry editors 
   + And more 
-  
-    
+
+
 ```
 $ git clone https://github.com/marionthefourth/port-life-angular.git
 $ cd port-life-angular
+$ ng add angular-cesium
 $ yarn
 $ yarn server
 $ yarn start
-$ open http://localhost:4200
 ```
+
+Open [http://localhost:4200](http://localhost:4200) to view the Port Life Application on your Web Browser.
