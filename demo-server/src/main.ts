@@ -19,10 +19,10 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Serve client
-app.use(express.static(path.resolve(__dirname + '/../../dist/angular-cesium-demo')));
+app.use(express.static(path.resolve(__dirname + '/../../dist/port-life-angular')));
 app.use(express.static(__dirname + '/../../'));
 app.get('/', function (req, res) {
-  res.sendFile(path.resolve(__dirname + '/../../dist/angular-cesium-demo/index.html'));
+  res.sendFile(path.resolve(__dirname + '/../../dist/port-life-angular/index.html'));
 });
 
 app.use(bodyParser.urlencoded({

@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('Welcome to angular-cesium-demo!');
+    expect(page.getTitleText()).toEqual('Welcome to port-life-angular!');
   });
 
   afterEach(async () => {

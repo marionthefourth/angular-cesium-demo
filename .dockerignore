@@ -1,0 +1,8 @@
+# Ignore unneeded folder structures
+# demo-server/
+# node_modules/
+
+# Ignore 
+*.md
+.gitignore
+Procfile
