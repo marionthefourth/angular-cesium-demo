@@ -1,4 +1,4 @@
-export interface Track {
+export interface FlightTrack {
   id: string | null;
   flightNumber: string | null;
   callsign: string | null;

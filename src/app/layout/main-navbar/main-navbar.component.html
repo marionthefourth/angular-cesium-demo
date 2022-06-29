@@ -3,7 +3,7 @@
     <mat-icon>settings</mat-icon>
   </button>
   <span *ngIf="(isHandset$ | async)" class="fill-remaining-space"></span>
-  <span>Angular-Cesium Demo</span>
+  <span>Port Life</span>
   <span class="fill-remaining-space"></span>
   <mat-button-toggle-group *ngIf="!(isHandset$ | async)" (valueChange)="changeAppSettings($event)" aria-label="Font Style" [value]="TracksType.MODELS_3D">
     <mat-button-toggle matTooltip="Live updating planes from a real data source. The data comes from the server using GraphQL." [value]="TracksType.REAL_DATA">LIVE TRACKS</mat-button-toggle>

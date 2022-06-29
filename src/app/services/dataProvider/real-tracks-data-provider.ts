@@ -10,7 +10,7 @@ import { Apollo } from 'apollo-angular';
 
 const TracksDataQuery = gql`
   query TracksData {
-    tracks{
+    flightTracks{
       callsign
       id
       groundSpeed

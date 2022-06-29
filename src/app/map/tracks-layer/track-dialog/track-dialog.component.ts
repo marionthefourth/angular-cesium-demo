@@ -4,11 +4,11 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Observable, Subject } from 'rxjs';
 import { Apollo, QueryRef } from 'apollo-angular';
 import gql from 'graphql-tag';
-import { Track } from '../../../services/dataProvider/track.model';
+import { FlightTrack } from '../../../services/dataProvider/track.model';
 
 const TrackDataQuery = gql`
   query TrackData($id: String!) {
-    track(id: $id){
+    flightTrack(id: $id){
       from
       to
       type
@@ -28,10 +28,10 @@ const TrackDataQuery = gql`
 export class TracksDialogComponent implements OnInit, OnDestroy {
   private readonly POLL_INTERVAL = 2000;
   public track$: Observable<any>;
-  public track: Track;
+  public track: FlightTrack;
   public trackEntityFn: any;
   private stopper$ = new Subject();
-  private singleTrackQuery$: QueryRef<Track>;
+  private singleTrackQuery$: QueryRef<FlightTrack>;
 
   constructor(@Inject(MAT_DIALOG_DATA) public data: any,
               private cd: ChangeDetectorRef, private apollo: Apollo) {
@@ -50,7 +50,7 @@ export class TracksDialogComponent implements OnInit, OnDestroy {
         },
         err => console.log('track dialog err: ' + err));
 
-      this.singleTrackQuery$ = this.apollo.watchQuery<Track>({
+      this.singleTrackQuery$ = this.apollo.watchQuery<FlightTrack>({
         query: TrackDataQuery,
         variables: {
           id: this.data.track.id,
